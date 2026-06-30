@@ -7,24 +7,76 @@
     <title>tldrSAT</title>
 
     <style>
-        body {
-            margin: 0;
-            background: #FBF3E5;
-        }
+body {
+    margin: 0;
+    background: #FBF3E5;
+}
 
-        .page {
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
+.page {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
-        .page img {
-            display: block;
-            width: 100%;
-            max-width: 1365px;
-            height: auto;
-        }
+.page img {
+    display: block;
+    width: 100%;
+    max-width: 1365px;
+    height: auto;
+}
+
+/* ---------- Clickable buttons ---------- */
+
+.clickable-page{
+    position:relative;
+}
+
+.pdf-btn{
+    position:absolute;
+    left:16.47%;
+    top:75.95%;
+    width:11.27%;
+    height:7.97%;
+}
+
+.discord-btn{
+    position:absolute;
+    left:69.91%;
+    top:84.31%;
+    width:30.09%;
+    height:8.10%;
+}
+
+.email-btn{
+    position:absolute;
+    left:70.13%;
+    top:93.86%;
+    width:29.87%;
+    height:3.92%;
+}
+
+/* Debug mode (delete later) */
+
+/*
+.pdf-btn{
+    background:rgba(255,0,0,.35);
+}
+
+.discord-btn{
+    background:rgba(0,255,0,.35);
+}
+
+.email-btn{
+    background:rgba(0,0,255,.35);
+}
+*/
+
+.pdf-btn,
+.discord-btn,
+.email-btn{
+    cursor:pointer;
+}
     </style>
 
 </head>
@@ -43,8 +95,21 @@
     <img src="2.png" alt="">
 </section>
 
-<section class="page">
+<section class="page clickable-page">
+
     <img src="3.png" alt="">
+
+    <a class="pdf-btn"
+       href="https://files.catbox.moe/phildk.pdf"
+       target="_blank"></a>
+
+    <a class="discord-btn"
+       href="https://discord.com/users/@kominicano"
+       target="_blank"></a>
+
+    <a class="email-btn"
+       href="mailto:hello@tldrsat.com"></a>
+
 </section>
 
 </body>
